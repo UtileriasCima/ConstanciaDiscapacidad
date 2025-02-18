@@ -21,6 +21,10 @@
       <Content Include="Images\girl.jpg">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+      <None Remove="Images\comprobado.png" />
+      <Content Include="Images\comprobado.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
