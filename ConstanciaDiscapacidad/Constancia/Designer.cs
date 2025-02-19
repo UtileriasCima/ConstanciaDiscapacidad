@@ -29,7 +29,7 @@ namespace ConstanciaDiscapacidad.Constancia
                 {
                     layers
                         .PrimaryLayer()
-                        .Image("Images/ConstanciaPCD.jpg")
+                        .Image("Images/ConstanciaDiscapacidadV2.jpg")
                         .WithCompressionQuality(ImageCompressionQuality.Best);
                     
                     layers
@@ -104,7 +104,7 @@ namespace ConstanciaDiscapacidad.Constancia
                                             .Element(inner =>
                                             {
                                                 string municipio = dto.Municipio;
-                                                float fontSize = municipio.Length > 20 ? 12 : 16;
+                                                float fontSize = municipio.Length > 20 ? 12 : 13;
                                                 inner.AlignBottom()
                                                     .Text(municipio)
                                                     .FontSize(fontSize)
@@ -128,7 +128,7 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Día
-                                    column.Item().TranslateX(50).TranslateY(-80).Text(dto.FechaEmision.ToString("dd")).FontSize(14).FontFamily("Arial").FontColor(Colors.Black);
+                                    column.Item().TranslateX(50).TranslateY(-80).Text(dto.FechaEmision.ToString("dd")).FontSize(12).FontFamily("Arial").FontColor(Colors.Black);
                                 });
                         });
                     
@@ -142,7 +142,7 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Mes
-                                    column.Item().TranslateX(115).TranslateY(-80).Text(dto.FechaEmision.ToString("MMMM")).FontSize(14).FontFamily("Arial").FontColor(Colors.Black);
+                                    column.Item().TranslateX(115).TranslateY(-80).Text(dto.FechaEmision.ToString("MMMM")).FontSize(12).FontFamily("Arial").FontColor(Colors.Black);
                                 });
                         });
                     
@@ -156,7 +156,7 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Año
-                                    column.Item().TranslateX(185).TranslateY(-80).Text(dto.FechaEmision.ToString("yyyy")).FontSize(14).FontFamily("Arial").FontColor(Colors.Black);
+                                    column.Item().TranslateX(185).TranslateY(-80).Text(dto.FechaEmision.ToString("yyyy")).FontSize(12).FontFamily("Arial").FontColor(Colors.Black);
                                 });
                         });
                     
@@ -170,31 +170,29 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Nombre
-                                    column.Item().TranslateX(-15).TranslateY(28).Row(row =>
+                                    column.Item().TranslateX(-13).TranslateY(35).Row(row =>
                                     {
                                         row.ConstantItem(490)
                                             .Background(Colors.Transparent)
-                                            .Height(50)
+                                            .Height(60)
                                             .Element(inner =>
                                             {
                                                 string nombre = dto.NombreCompleto;
                                                 float fontSize = nombre.Length switch
                                                 {
-                                                    > 250 => 10,
-                                                    > 200 => 11,
-                                                    > 150 => 12,
-                                                    > 100 => 13,
-                                                    > 50 => 13,
-                                                    _ => 14
+                                                    > 200 => 9,
+                                                    > 100 => 10,
+                                                    _ => 11
                                                 };
                                                 inner.AlignTop()
                                                     .Text(nombre)
                                                     .FontSize(fontSize)
                                                     .FontFamily("Arial")
                                                     .FontColor(Colors.Black)
+                                                    .Underline()
                                                     .LineHeight(1.3f)
                                                     .Justify()
-                                                    .ClampLines(3, "..");
+                                                    .ClampLines(5, "..");
                                             });
                                     });
                                 });
@@ -210,31 +208,29 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Diagnostico
-                                    column.Item().TranslateX(-15).TranslateY(100).Row(row =>
+                                    column.Item().TranslateX(-13).TranslateY(106).Row(row =>
                                     {
                                         row.ConstantItem(490)
                                             .Background(Colors.Transparent)
-                                            .Height(50)
+                                            .Height(60)
                                             .Element(inner =>
                                             {
                                                 string diagnostico = dto.Diagnostico;
                                                 float fontSize = diagnostico.Length switch
                                                 {
-                                                    > 250 => 10,
-                                                    > 200 => 11,
-                                                    > 150 => 12,
-                                                    > 100 => 13,
-                                                    > 50 => 13,
-                                                    _ => 14
+                                                    > 200 => 9,
+                                                    > 100 => 10,
+                                                    _ => 11
                                                 };
                                                 inner.AlignTop()
                                                     .Text(diagnostico)
                                                     .FontSize(fontSize)
                                                     .FontFamily("Arial")
                                                     .FontColor(Colors.Black)
+                                                    .Underline()
                                                     .LineHeight(1.3f)
                                                     .Justify()
-                                                    .ClampLines(3, "..");
+                                                    .ClampLines(5, "..");
                                             });
                                     });
                                 });
@@ -250,31 +246,29 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Observaciones
-                                    column.Item().TranslateX(-15).TranslateY(170).Row(row =>
+                                    column.Item().TranslateX(-13).TranslateY(176).Row(row =>
                                     {
                                         row.ConstantItem(490)
                                             .Background(Colors.Transparent)
-                                            .Height(50)
+                                            .Height(60)
                                             .Element(inner =>
                                             {
                                                 string observaciones = dto.Observaciones;
                                                 float fontSize = observaciones.Length switch
                                                 {
-                                                    > 250 => 10,
-                                                    > 200 => 11,
-                                                    > 150 => 12,
-                                                    > 100 => 13,
-                                                    > 50 => 13,
-                                                    _ => 14
+                                                    > 200 => 9,
+                                                    > 100 => 10,
+                                                    _ => 11
                                                 };
                                                 inner.AlignTop()
                                                     .Text(observaciones)
                                                     .FontSize(fontSize)
                                                     .FontFamily("Arial")
                                                     .FontColor(Colors.Black)
+                                                    .Underline()
                                                     .LineHeight(1.3f)
                                                     .Justify()
-                                                    .ClampLines(3, "..");
+                                                    .ClampLines(4, "..");
                                             });
                                     });
                                 });
@@ -298,7 +292,7 @@ namespace ConstanciaDiscapacidad.Constancia
                                             .Element(inner =>
                                             {
                                                 string medico = dto.Medico;
-                                                float fontSize = medico.Length > 20 ? 10 : 13;
+                                                float fontSize = medico.Length > 20 ? 10 : 11;
                                                 inner.AlignBottom()
                                                     .Text(medico)
                                                     .FontSize(fontSize)
@@ -330,7 +324,7 @@ namespace ConstanciaDiscapacidad.Constancia
                                             .Element(inner =>
                                             {
                                                 string cedula = dto.Cedula;
-                                                float fontSize = cedula.Length > 20 ? 10 : 13;
+                                                float fontSize = cedula.Length > 20 ? 10 : 11;
                                                 inner.AlignBottom()
                                                     .Text(cedula)
                                                     .FontSize(fontSize)
