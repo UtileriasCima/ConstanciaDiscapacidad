@@ -284,9 +284,9 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Medico
-                                    column.Item().TranslateX(105).TranslateY(284).Row(row =>
+                                    column.Item().TranslateX(132).TranslateY(284).Row(row =>
                                     {
-                                        row.ConstantItem(130)
+                                        row.ConstantItem(180)
                                             .Background(Colors.Transparent)
                                             .Height(16)
                                             .Element(inner =>
@@ -316,9 +316,9 @@ namespace ConstanciaDiscapacidad.Constancia
                                 .Column(column =>
                                 {
                                     // Cedula
-                                    column.Item().TranslateX(105).TranslateY(305).Row(row =>
+                                    column.Item().TranslateX(132).TranslateY(305).Row(row =>
                                     {
-                                        row.ConstantItem(130)
+                                        row.ConstantItem(180)
                                             .Background(Colors.Transparent)
                                             .Height(16)
                                             .Element(inner =>

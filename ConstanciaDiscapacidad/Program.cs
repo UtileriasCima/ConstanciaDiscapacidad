@@ -33,7 +33,7 @@ namespace ConstanciaDiscapacidad
                 Diagnostico = "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor sit amet, consectetur adipiscing elit scing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor sit ur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor sit",
                 Observaciones = "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor sit amet, consectetur adipiscing elit scing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor sit ur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing eli Lorem ipsum dolor sit",
                 FechaEmision = new DateTime(2021, 09, 10),
-                Medico = "Ximena Mendoza Villanueva",
+                Medico = "Alejandra Mendoza Dominguez Casavantes de la Rosa",
                 Cedula = "12345698",
                 IsPlacas = false
             };
